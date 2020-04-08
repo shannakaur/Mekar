@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- adding meta data that provides info to browser but doesnt actl show up -->
+	<meta charset="utf-8">
+	<!-- viewport allows blog display to vary according to diff devices, initial scale is how zoomed in the page is when first loaded -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Mekar </title>
+	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Lora&display=swap" rel="stylesheet">
+	<!-- using internal css for this with classes -->
+	<!-- flex direction allows you to change layout frm row to column (more options available), this is a css property-->
+	<!-- ul padding is to override the padding that is automatically set by the browser so that the list is centered together with the title-->
+	<!-- 100vh in plant-image style refers to 100% of the viewport height -->
+	<!-- cover property makes the image cover the full background area -->
+	<!-- using 'em' for font size is because em is a scalable unit so it works with responsive web design -->
+	<style>
+		html{
+			font-family: 'Lora', serif;
+		}
+		.background{
+			background: white;
+		}
+
+		header{
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+		}
+
+		header h1 {
+			margin: 0;
+			padding: 30px;
+		}
+
+		li{
+			list-style: none;
+			padding: 7px;
+		}
+
+		ul{
+			padding:35px;
+			margin: 0px;
+		}
+
+		.plant-image{
+			background: url(img/bloomnew.jpg) no-repeat center center fixed;
+			min-height: 100vh;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.plant-text{
+			text-align: center;
+			font-size: 2.5em;
+			padding: 1.5em;
+			font-family:'Homemade Apple', cursive;
+			line-height: 30px;
+
+
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		#name{
+			font-size: 0.4em;
+			font-family: 'Lora', serif;
+		}
+
+		@media (min-width: 850px) {
+			body{
+				max-width: 1600px;
+				margin: 0 auto;
+			}
+
+			header {
+				flex-direction: row;
+			}
+
+			header li {
+				display: inline-block;
+			}
+
+			header h1, header nav {
+				flex: 1;
+			}
+
+			header h1 {
+				text-align: left;
+			}
+
+			header nav {
+				text-align: right;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<header class="background">
+		<!-- header and nav(igation) are semantic elements, meaning they describe the content within them -->
+		<h1> Mekar </h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">About Me</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</nav>
+	</header>
+<!-- 'strong' and 'em' are used to focus meaning, strong is usually shown in bold and em(phasis) in italics; take note of nesting! the words in between these elements will be the ones affected by this -->
+	<div class="plant-image">
+		<p class="plant-text background">
+			<strong>Mekar</strong> <span id="name"> <br> <em>by Shanna Kaur</em> </span>
+		</p>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
