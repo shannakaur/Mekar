@@ -1,0 +1,168 @@
+html{
+			font-family: 'Lora', serif;
+		}
+		.background{
+			background: white;
+		}
+
+		.backgroundbox{
+			border: 2px solid black;
+			margin: 30px;
+		}
+
+		header{
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+		}
+
+		header h1 {
+			margin: 0;
+			padding: 30px;
+		}
+
+		header ul{
+			padding: 20px;
+		}
+
+		header h2{
+			margin-top: 25px;
+			padding-top: 20px;
+			padding-top: 20px; 
+		}
+
+		li{
+			list-style: none;
+			padding-left: 5px;
+		}
+
+		ul{
+			margin-top: 30px;
+		}
+
+		.plant-image{
+			background: url(../img/bloomnew.jpg) no-repeat center center fixed;
+			min-height: 100vh;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.plant-text{
+			text-align: center;
+			font-size: 2.5em;
+			padding: 1.5em;
+			font-family:'Homemade Apple', cursive;
+			line-height: 30px;
+
+
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		#name{
+			font-size: 0.4em;
+			font-family: 'Lora', serif;
+		}
+		#shanna{
+				border-radius: 160px;
+				border: 5px solid black;
+				width:200px;
+				height: 200px;
+		}
+
+		.wrapper{
+			display: flex;
+			flex-direction: column;
+		}
+
+		article, .sidebar-widget{
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 25px;
+			margin: 0;
+
+		}
+
+		img{
+			width: 100%;
+		}
+
+		.fa-instagram, .fa-facebook-square, .fa-spotify, i{
+			margin: 0 5px;
+		}
+
+		a:hover{
+				color: darkgreen;
+		}
+
+		.profile{
+			text-align: center;
+		}
+
+
+		@media (min-width: 850px) {
+			body{
+				max-width: 1600px;
+				margin: 0 auto;
+			}
+
+			header {
+				flex-direction: row;
+			}
+
+			header li {
+				display: inline-block;
+			}
+
+			header h1, header nav {
+				flex: 1;
+			}
+
+			header h1 {
+				text-align: left;
+			}
+
+			header nav {
+				text-align: right;
+			}
+
+			/*blog*/
+
+			.wrapper{
+				flex-direction: row;
+
+			}
+
+			main{
+				flex: 3;
+				margin: 0px;
+			}
+
+			aside{
+				flex: 1;
+				margin-top: 30px;
+				margin-right: 30px;
+			}
+
+			.profile{
+				border: 2px solid black;
+				margin-top: 30px;
+				padding: 20px;
+				text-align: center;
+			}
+
+			article > header {
+				justify-content: space-between;
+			}
+
+
+
+
+
+			}
+		}

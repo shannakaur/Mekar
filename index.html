@@ -6,7 +6,7 @@
 	<!-- viewport allows blog display to vary according to diff devices, initial scale is how zoomed in the page is when first loaded -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Mekar </title>
-	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Lora&display=swap" rel="stylesheet">
 	<!-- using internal css for this with classes -->
 	<!-- flex direction allows you to change layout frm row to column (more options available), this is a css property-->
@@ -14,91 +14,8 @@
 	<!-- 100vh in plant-image style refers to 100% of the viewport height -->
 	<!-- cover property makes the image cover the full background area -->
 	<!-- using 'em' for font size is because em is a scalable unit so it works with responsive web design -->
-	<style>
-		html{
-			font-family: 'Lora', serif;
-		}
-		.background{
-			background: white;
-		}
-
-		header{
-			text-align: center;
-			display: flex;
-			flex-direction: column;
-		}
-
-		header h1 {
-			margin: 0;
-			padding: 30px;
-		}
-
-		li{
-			list-style: none;
-			padding: 7px;
-		}
-
-		ul{
-			padding:35px;
-			margin: 0px;
-		}
-
-		.plant-image{
-			background: url(img/bloomnew.jpg) no-repeat center center fixed;
-			min-height: 100vh;
-			background-size: cover;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.plant-text{
-			text-align: center;
-			font-size: 2.5em;
-			padding: 1.5em;
-			font-family:'Homemade Apple', cursive;
-			line-height: 30px;
-
-
-		}
-
-		a{
-			text-decoration: none;
-			color: black;
-		}
-
-		#name{
-			font-size: 0.4em;
-			font-family: 'Lora', serif;
-		}
-
-		@media (min-width: 850px) {
-			body{
-				max-width: 1600px;
-				margin: 0 auto;
-			}
-
-			header {
-				flex-direction: row;
-			}
-
-			header li {
-				display: inline-block;
-			}
-
-			header h1, header nav {
-				flex: 1;
-			}
-
-			header h1 {
-				text-align: left;
-			}
-
-			header nav {
-				text-align: right;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="css/fontawesome-free-5.13.0-web/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -120,6 +37,96 @@
 		<p class="plant-text background">
 			<strong>Mekar</strong> <span id="name"> <br> <em>by Shanna Kaur</em> </span>
 		</p>
+	</div>
+
+	<!-- this div is for the main section which is where the articles will appear. the appearance is a box that's ivory coloured with the articles within them. i'm putting this in my index.html page and NOT my blog.html page b/c i want my landing page to be the blog page -->
+	<div class="wrapper">
+		<main>
+			<article class="backgroundbox">
+				<header>
+					<h2>
+						Blog Post 1
+					</h2>
+					<ul>
+						<li>Created: <em>5 Days Ago</em></li>
+					</ul>
+				</header>
+				<section>
+					<img src="img/hdbnew.jpg" alt="hdb image">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim, est quis fringilla ullamcorper, enim augue placerat tortor, sit amet mollis dui dolor sed ipsum. Sed mi odio, iaculis vel eros nec, porttitor porta tellus. Nunc lorem metus, sagittis eu nulla in, feugiat aliquam arcu. Ut placerat porta eros eu venenatis. Pellentesque ut sem a nibh sagittis maximus. Integer et sollicitudin orci. Donec pellentesque quam sit amet massa porta hendrerit. Duis et mi quis lorem maximus tincidunt.
+
+					Donec sit amet felis ut dolor scelerisque tincidunt. Morbi dictum est et aliquam aliquet. Fusce ullamcorper ultrices lorem, vitae placerat massa auctor id. Vestibulum et ligula porttitor, sollicitudin elit id, porta ipsum. Etiam pretium turpis at sapien rhoncus, quis rhoncus est elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam non gravida nisl, quis condimentum est. Integer magna nisl, auctor et dolor sit amet, pellentesque tempus tellus. Donec consectetur lobortis suscipit. Vestibulum at risus ultrices, tempor risus elementum, cursus nulla.</p>
+
+					<a href=""> Read more... </a>
+
+				</section>
+				
+			</article>
+
+			<article class="backgroundbox">
+				<header>
+					<h2>
+						Blog Post 2
+					</h2>
+					<ul>
+						
+						<li>Created: <em>6 Days Ago</em></li>
+					</ul>
+				</header>
+				<section>
+					<img src="img/flowernew.jpg" alt="flower image">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim, est quis fringilla ullamcorper, enim augue placerat tortor, sit amet mollis dui dolor sed ipsum. Sed mi odio, iaculis vel eros nec, porttitor porta tellus. Nunc lorem metus, sagittis eu nulla in, feugiat aliquam arcu. Ut placerat porta eros eu venenatis. Pellentesque ut sem a nibh sagittis maximus. Integer et sollicitudin orci. Donec pellentesque quam sit amet massa porta hendrerit. Duis et mi quis lorem maximus tincidunt.
+
+					Donec sit amet felis ut dolor scelerisque tincidunt. Morbi dictum est et aliquam aliquet. Fusce ullamcorper ultrices lorem, vitae placerat massa auctor id. Vestibulum et ligula porttitor, sollicitudin elit id, porta ipsum. Etiam pretium turpis at sapien rhoncus, quis rhoncus est elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam non gravida nisl, quis condimentum est. Integer magna nisl, auctor et dolor sit amet, pellentesque tempus tellus. Donec consectetur lobortis suscipit. Vestibulum at risus ultrices, tempor risus elementum, cursus nulla.</p>
+
+					<a href=""> Read more... </a>
+
+				</section>
+				
+			</article>
+			<article class="backgroundbox">
+				<header>
+					<h2>
+						Blog Post 3
+					</h2>
+					<ul>
+						
+						<li>Created: <em>8 Days Ago</em></li>
+					</ul>
+				</header>
+				<section>
+					<img src="img/singapore.jpg" alt="singapore image">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim, est quis fringilla ullamcorper, enim augue placerat tortor, sit amet mollis dui dolor sed ipsum. Sed mi odio, iaculis vel eros nec, porttitor porta tellus. Nunc lorem metus, sagittis eu nulla in, feugiat aliquam arcu. Ut placerat porta eros eu venenatis. Pellentesque ut sem a nibh sagittis maximus. Integer et sollicitudin orci. Donec pellentesque quam sit amet massa porta hendrerit. Duis et mi quis lorem maximus tincidunt.
+
+					Donec sit amet felis ut dolor scelerisque tincidunt. Morbi dictum est et aliquam aliquet. Fusce ullamcorper ultrices lorem, vitae placerat massa auctor id. Vestibulum et ligula porttitor, sollicitudin elit id, porta ipsum. Etiam pretium turpis at sapien rhoncus, quis rhoncus est elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam non gravida nisl, quis condimentum est. Integer magna nisl, auctor et dolor sit amet, pellentesque tempus tellus. Donec consectetur lobortis suscipit. Vestibulum at risus ultrices, tempor risus elementum, cursus nulla.</p>
+
+					<a href=""> Read more... </a>
+
+				</section>
+				
+			</article>
+			
+		</main>
+		<aside>
+			<section class="sidebar-widget backgroundbox">
+				<h2>
+					Reach me at:
+				</h2>
+				<hr>
+				<div class="social">
+					<a href="https://www.instagram.com/shannakaur/" target="_blank" class="fab fa-instagram fa-2x"></a>
+					<a href="https://www.facebook.com/shanna.kaur.12" target="_blank" class="fab fa-facebook-square fa-2x"></a>
+					<i class="fas fa-envelope-square fa-2x"></i>
+					<a href="https://open.spotify.com/user/shannakaur?si=LJNAYJxjQL-MmJTpb3tXiw" target="_blank" class="fab fa-spotify fa-2x"></a>
+				</div>
+				
+			</section>
+			<section class="profile">
+				<h2>Hi, I'm Shanna!</h2>
+				<img id="shanna" src="img/profile.jpg">
+				<p> Welcome to my blog! Here you will random musings and little snippets of my life. This is where I pour out all the ugliness and beauty of navigating my 20s.  I hope you enjoy the ride, and can take heart in knowing that we're all figuring this out together!</p>
+			</section>
+		</aside>
 	</div>
 </body>
 </html>
