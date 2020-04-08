@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- adding meta data that provides info to browser but doesnt actl show up -->
+	<meta charset="utf-8">
+	<!-- viewport allows blog display to vary according to diff devices, initial scale is how zoomed in the page is when first loaded -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Mekar </title>
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Lora&display=swap" rel="stylesheet">
+	<!-- using internal css for this with classes -->
+	<!-- flex direction allows you to change layout frm row to column (more options available), this is a css property-->
+	<!-- ul padding is to override the padding that is automatically set by the browser so that the list is centered together with the title-->
+	<!-- 100vh in plant-image style refers to 100% of the viewport height -->
+	<!-- cover property makes the image cover the full background area -->
+	<!-- using 'em' for font size is because em is a scalable unit so it works with responsive web design -->
+	<link rel="stylesheet" href="css/fontawesome-free-5.13.0-web/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="plant-image">
+	<header id="mekar">
+		<!-- header and nav(igation) are semantic elements, meaning they describe the content within them -->
+		<h1> Mekar </h1>
+		<nav>
+			<ul id="mekarul">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">About Me</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="wrapper">
+		<main>
+			<article class="backgroundbox background">
+				<header>
+					<h2 id="blogtitle">
+						Blog Post 1
+					</h2>
+					<ul>
+						<li>Created: <em>5 Days Ago</em></li>
+					</ul>
+				</header>
+				<hr>
+				<!--
+				<div class="social">
+					<a href="https://www.instagram.com/shannakaur/" target="_blank" class="fab fa-instagram fa-2x"></a>
+					<a href="https://www.facebook.com/shanna.kaur.12" target="_blank" class="fab fa-facebook-square fa-2x"></a>
+					<i class="fas fa-envelope-square fa-2x"></i>
+					<a href="https://open.spotify.com/user/shannakaur?si=LJNAYJxjQL-MmJTpb3tXiw" target="_blank" class="fab fa-spotify fa-2x"></a>
+				</div>
+				-->
+				<section>
+					<img src="img/hdbnew.jpg" alt="hdb image">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim, est quis fringilla ullamcorper, enim augue placerat tortor, sit amet mollis dui dolor sed ipsum. Sed mi odio, iaculis vel eros nec, porttitor porta tellus. Nunc lorem metus, sagittis eu nulla in, feugiat aliquam arcu. Ut placerat porta eros eu venenatis. Pellentesque ut sem a nibh sagittis maximus. Integer et sollicitudin orci. Donec pellentesque quam sit amet massa porta hendrerit. Duis et mi quis lorem maximus tincidunt.
+
+					Donec sit amet felis ut dolor scelerisque tincidunt. Morbi dictum est et aliquam aliquet. Fusce ullamcorper ultrices lorem, vitae placerat massa auctor id. Vestibulum et ligula porttitor, sollicitudin elit id, porta ipsum. Etiam pretium turpis at sapien rhoncus, quis rhoncus est elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam non gravida nisl, quis condimentum est. Integer magna nisl, auctor et dolor sit amet, pellentesque tempus tellus. Donec consectetur lobortis suscipit. Vestibulum at risus ultrices, tempor risus elementum, cursus nulla.</p>
+				</section>
+			</article>
+		</main>
+				
+			</article>
+			<aside>
+			<section class="background">
+				<h2>Hi, I'm Shanna!</h2>
+				<img id="shanna" src="img/profile.jpg">
+				<p> Welcome to my blog! Here you will random musings and little snippets of my life. This is where I pour out all the ugliness and beauty of navigating my 20s.  I hope you enjoy the ride, and can take heart in knowing that we're all figuring this out together!</p>
+				<hr>
+				<h2>Other Stories</h2>
+				<ul id="sidelist">
+					<li><a href="blogpost2.html">Blogpost 2</a></li>
+					<li><a href="blogpost3.html">Blogpost 3</a></li>
+				</ul>
+			</section>
+		</aside>
+		<style>
+			aside section{
+				border: 2px solid black;
+				margin-top: 0;
+				padding: 20px;
+				text-align: center;
+			}
+			#sidelist{
+				text-align: center;
+				padding:0;
+				line-height: 30px;
+			}
+			main{
+				background-color: solid white;
+			}
+			#mekar{
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				margin-left:30px;
+			}
+			#mekarul{
+				text-align: center;
+				line-height: 30px;
+			}
+		</style>
+	</div>
+</body>
+</html>
